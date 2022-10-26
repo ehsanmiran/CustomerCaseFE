@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import React from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import moment from 'moment'
 
 const Event = () => {
-  const navigate = useNavigate()
   const { id } = useParams()
   const [event, setEvent] = useState('')
   const [loading, setLoading] = useState(true)
@@ -20,25 +19,17 @@ const Event = () => {
     getEvent()
   }, [id]);
 
-  const handleClick = () => {
-    fetch('http://localhost:8080/events/' + event.id, {
-      method: 'DELETE'
-    })
-    setTimeout ( () => navigate(-1), 250); 
-  }
-
   return (
     <div className='centered'>
       { loading && <div> Loading...</div> }
       <div className='listBody'>
         <div className='event-line disabled'>
-          <h3>{event.title}</h3>
+          <h3>{event.subject}</h3>
           <p>{moment(event.timeStamp).fromNow()}</p>
         </div>
-      <p className='parag'>{event.description}</p>
-      <button className='btn' onClick={handleClick}>delete</button>
-      </div>
-        
+        <p className='parag'>{event.message}</p><br></br>
+        <Link to="/" className='liActive nav-link'>Back to the list of Cases</Link>
+      </div>        
     </div>
   )
 }
