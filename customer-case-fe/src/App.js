@@ -1,12 +1,11 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-// import { useState } from 'react'
 import './App.css';
 
 import Navbar from './components/Navbar';
-import EventsList from './Views/EventsList'
-import AddEvent from './Views/AddEvent'
-import EventView from './Views/EventView'
+import CasesList from './Views/CasesList'
+import AddCase from './Views/AddCase'
+import CaseView from './Views/CaseView'
 
 function App() {
 
@@ -16,9 +15,9 @@ function App() {
         <Navbar />
         
         <Routes>
-          <Route path='/' element={ <EventsList /> } />
-          <Route path='/addevent' element={ <AddEvent /> } />
-          <Route path='/event/:id' element={ <EventView /> } />
+          <Route path='/' element={ <CasesList /> } />
+          <Route path='/addcase' element={ <AddCase /> } />
+          <Route path='/case/:id' element={ <CaseView /> } />
         </Routes>
 
       </div>

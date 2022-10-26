@@ -4,19 +4,19 @@ import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 
 
-const Event = () => {
+const Case = () => {
   const { id } = useParams()
-  const [event, setEvent] = useState('')
+  const [ccase, setCcase] = useState('')
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const getEvent = async () => {
+    const getCcase = async () => {
       setLoading(true)
-      const res = await axios.get('http://localhost:8080/events/' + id)
-      setEvent(res.data)
+      const res = await axios.get('http://localhost:8080/Cases/' + id)
+      setCcase(res.data)
       setLoading(false)
     }
-    getEvent()
+    getCcase()
   }, [id]);
 
   return (
@@ -24,14 +24,14 @@ const Event = () => {
       { loading && <div> Loading...</div> }
       <div className='listBody'>
         <div className='event-line disabled'>
-          <h3>{event.subject}</h3>
-          <p>{event.status}</p>
+          <h3>{ccase.subject}</h3>
+          <p>{ccase.status}</p>
         </div>
-        <p className='parag'>{event.message}</p><br></br>
+        <p className='parag'>{ccase.message}</p><br></br>
         <Link to="/" className='liActive nav-link'>Back to the list of Cases</Link>
       </div>        
     </div>
   )
 }
 
-export default Event
+export default Case

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const AddEvent = () => {
+const AddCase = () => {
   const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [customerName, setCustomerName] = useState('')
@@ -20,14 +20,14 @@ const AddEvent = () => {
         setVerification(true)
     }
     
-    const event = {email, customerName, subject, message, status};
+    const ccase = {email, customerName, subject, message, status};
 
     setLoading(true)
 
-    fetch('http://localhost:8080/events', {
+    fetch('http://localhost:8080/Cases', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(event)
+      body: JSON.stringify(ccase)
     }).then(() => {
       setEmail('')
       setCustomerName('')
@@ -76,4 +76,4 @@ const AddEvent = () => {
   )
 }
 
-export default AddEvent
+export default AddCase
