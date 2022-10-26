@@ -1,72 +1,20 @@
 {
-  "events": [
+  "Cases": [
     {
-      "subject": "Kristi himmelfärdsdag.",
-      "timeStamp": 1653516000000,
-      "description": "orsdagen den 26:e maj 2022\n\när en helgdag / röd dag som som kallas Kristi himmelfärdsdag.\nDenna dag är det Vilhelmina, Vilma som har namnsdag, det är vecka 21 och det är dag 146 på året.\n",
+      "email": "ehsan@domain.com",
+      "customerName": "Ehsan Miran",
+      "subject": "Greetings from heart",
+      "message": "Hello!\nI'm testing this now.\nI wish everything will be good this time.",
+      "status": "New Case",
       "id": 1
     },
     {
-      "subject": "Mors Dag",
-      "timeStamp": 1653775200000,
-      "description": "29:e maj är en FN-dag\nInternationella dagen för FN:s fredsbevarande personal\n\n\nDenna dag är det Jeanette, Yvonne som har namnsdag, det är vecka 21 och det är dag 149 på året.",
-      "id": 2
-    },
-    {
-      "subject": "Första maj",
-      "timeStamp": 1651356000000,
-      "description": "Söndagen den 1:a maj 2022\n\när en helgdag / röd dag som som kallas Första maj. 1:a Maj är dessutom en Flaggdag.\nDenna dag är det Valborg som har namnsdag, det är vecka 17 och det är dag 121 på året.\n",
-      "id": 3
-    },
-    {
-      "subject": "Påskdagen",
-      "timeStamp": 1650146400000,
-      "description": "Söndagen den 17:e april 2022\n\när en helgdag / röd dag som som kallas Påskdagen. Påskafton är dessutom en Flaggdag.\nDenna dag är det Elias, Elis som har namnsdag, det är vecka 15 och det är dag 107 på året.\n",
-      "id": 5
-    },
-    {
-      "subject": "Midsommardagen",
-      "timeStamp": 1656108000000,
-      "description": "Lördagen den 25:e juni 2022\n\när en helgdag / röd dag som som kallas Midsommardagen. Midsommardagen är dessutom en Flaggdag.\nDenna dag är det David, Salomon som har namnsdag, det är vecka 25 och det är dag 176 på året.",
-      "id": 6
-    },
-    {
-      "subject": "Nyårsdagen",
-      "timeStamp": 1640991600000,
-      "description": "Lördagen den 1:a januari 2022\n\när en helgdag / röd dag som som kallas Nyårsdagen. Nyårsdagen är dessutom en Flaggdag.\nDenna dag är det som har namnsdag, det är vecka 52 och det är dag 1 på året.",
-      "id": 7
-    },
-    {
-      "email": "test@mail.com",
-      "fullname": "Ehsan Miran",
-      "subject": "Fel anmälan",
-      "description": "Bla bla",
+      "email": "anymail",
+      "customerName": "Ehsan",
+      "subject": "Testing again and again",
+      "message": "Testings",
       "status": "Opened",
-      "id": 8
-    },
-    {
-      "email": "mail@mail.com",
-      "fullname": "Ehsan Miran",
-      "subject": "Testing",
-      "message": " testing  testing  testing  testing  testing ",
-      "status": "Closed",
-      "id": 9
-    },
-    {
-      "email": "djdj",
-      "customerName": "djhdjdj",
-      "subject": "dhjdhj",
-      "message": "djhdj",
-      "status": "New Case",
-      "id": 10
-    },
-    {
-      "email": "ghgf",
-      "customerName": "",
-      "subject": "fghfg",
-      "message": "",
-      "status": "New Case",
-      "id": 11
+      "id": 2
     }
   ]
 }
