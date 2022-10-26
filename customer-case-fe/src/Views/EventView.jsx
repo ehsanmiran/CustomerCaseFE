@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
-import moment from 'moment'
+
 
 const Event = () => {
   const { id } = useParams()
@@ -25,7 +25,7 @@ const Event = () => {
       <div className='listBody'>
         <div className='event-line disabled'>
           <h3>{event.subject}</h3>
-          <p>{moment(event.timeStamp).fromNow()}</p>
+          <p>{event.status}</p>
         </div>
         <p className='parag'>{event.message}</p><br></br>
         <Link to="/" className='liActive nav-link'>Back to the list of Cases</Link>

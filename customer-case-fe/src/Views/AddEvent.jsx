@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 const AddEvent = () => {
   const navigate = useNavigate()
   const [email, setEmail] = useState('')
-  const [fullname, setFullname] = useState('')
+  const [customerName, setCustomerName] = useState('')
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
   const [status, setStatus] = useState('')
@@ -13,14 +13,14 @@ const AddEvent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(email.length === 0 | subject.length === 0) {
+    if(email.length === 0 | subject.length === 0 | status.length === 0) {
       setVerification(false);
       return
     }else{
         setVerification(true)
     }
     
-    const event = {email, fullname, subject, message, status};
+    const event = {email, customerName, subject, message, status};
 
     setLoading(true)
 
@@ -30,7 +30,7 @@ const AddEvent = () => {
       body: JSON.stringify(event)
     }).then(() => {
       setEmail('')
-      setFullname('')
+      setCustomerName('')
       setSubject('')
       setMessage('')
       setStatus('')
@@ -51,17 +51,18 @@ const AddEvent = () => {
           <input type="text" name='email' value={email} placeholder='Enter your email address...' className='input' onChange={(e) => { setEmail(e.target.value) }}/>
         </div>
         <div className='field-warp'>
-          <input type="text" name='fullname' value={fullname} placeholder='Enter your full name...' className='input' onChange={(e) => { setFullname(e.target.value) }}/>
+          <input type="text" name='customerName' value={customerName} placeholder='Enter your full name...' className='input' onChange={(e) => { setCustomerName(e.target.value) }}/>
         </div>
         <div className='field-warp'>
           <input type="text" name='subject' value={subject} placeholder='Enter subject...' className='input' onChange={(e) => { setSubject(e.target.value) }}/>
         </div>
         <div className="timestamp input">
           <label className='input'>Select Status: </label>
-          <select name='status' value={status} className="select select-input" onChange={(e) => { setStatus(e.target.value) }}>
-            <option value="new">New Case</option>
-            <option value="opened">Opened</option>
-            <option value="closed">Closed</option>
+          <select type="text" id='status' value={status} className="select select-input" onChange={(e) => { setStatus(e.target.value) }}>
+            <option value="empty">Click Here!</option>
+            <option value="New Case">New Case</option>
+            <option value="Opened">Opened</option>
+            <option value="Closed">Closed</option>
           </select>
         </div>
         <div className='field-warp'>
@@ -69,7 +70,7 @@ const AddEvent = () => {
         </div>
         {!loading && <button className='btn'>Send Customer Case</button>}
         {loading && <button className='btn'>Adding...</button>}
-        {!verification && <p>Title, Date and Time can not be empty.</p>}
+        {!verification && <p>* Email, Subject and Status fields can not be empty.</p>}
       </form>
     </div>
   )

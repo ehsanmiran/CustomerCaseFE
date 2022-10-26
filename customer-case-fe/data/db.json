@@ -41,6 +41,7 @@
       "fullname": "Ehsan Miran",
       "subject": "Fel anmälan",
       "description": "Bla bla",
+      "status": "Opened",
       "id": 8
     },
     {
@@ -48,7 +49,24 @@
       "fullname": "Ehsan Miran",
       "subject": "Testing",
       "message": " testing  testing  testing  testing  testing ",
+      "status": "Closed",
       "id": 9
+    },
+    {
+      "email": "djdj",
+      "customerName": "djhdjdj",
+      "subject": "dhjdhj",
+      "message": "djhdj",
+      "status": "New Case",
+      "id": 10
+    },
+    {
+      "email": "ghgf",
+      "customerName": "",
+      "subject": "fghfg",
+      "message": "",
+      "status": "New Case",
+      "id": 11
     }
   ]
 }
