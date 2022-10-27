@@ -15,6 +15,22 @@
       "message": "Testings",
       "status": "Opened",
       "id": 2
+    },
+    {
+      "email": "whatever",
+      "customerName": "",
+      "subject": "One more test",
+      "message": "dsdfsdaffda",
+      "status": "Closed",
+      "id": 3
+    },
+    {
+      "email": "mymail@domain.se",
+      "customerName": "Ehsan",
+      "subject": "Test again ",
+      "message": "whatever here",
+      "status": "New Case",
+      "id": 4
     }
   ]
 }
