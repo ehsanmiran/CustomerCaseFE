@@ -31,12 +31,7 @@ body, html {
   text-decoration: none;
   font-size: 2rem;
 }
-/* .logoImage {
-  color: #bf1818;
-  width: 3rem;
-  height: 3.5rem;
-  margin: 0.4rem 1rem 0 0;
-} */
+
 .listBody {
   padding: 1rem 2rem;
 }
@@ -162,7 +157,6 @@ h3 {
 .event-line p {
   color: bisque;
   padding: 0.5rem 0.8rem;
-  margin-bottom: 0.5rem;
 }
 .timestamp{
   background-color: #b46b05;
@@ -171,7 +165,7 @@ h3 {
 
 }
 .timestamp input{
-  padding: 0 25px 0;
+padding: 0 25px 0;
   margin: 0 !important;
 }
 .timestamp label{
@@ -179,23 +173,16 @@ h3 {
   margin: 0 !important;
   flex-grow: 1;
 }
-/* .timestamp input::-webkit-calendar-picker-indicator {
+.timestamp input::-webkit-calendar-picker-indicator {
   filter: invert(1);
-} */
+}
 textarea {
   resize: none;
 }
 .disabled {
   pointer-events: none;
 }
-/* .grid {
-  display: grid;
-  grid-template-columns: 1fr 50px;
-}
-.grid button{
-  padding: 0 19px 0;
-  margin-bottom: 13px !important ;
-} */
+
 .pastevents h3,p{
   color: #7f7f7f !important;
 }
@@ -203,12 +190,13 @@ textarea {
   background : #454545 !important;
 }
 .parag {
-  border: dotted 2px #2a2a2a;
+  border: dashed 1px #875004;
   margin: 25px 0 25px;
   padding: 1rem;
 }
 .centered {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .select {

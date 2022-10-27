@@ -20,15 +20,26 @@ const Case = () => {
   }, [id]);
 
   return (
-    <div className='centered'>
+    <div>
       { loading && <div> Loading...</div> }
       <div className='listBody'>
         <div className='event-line disabled'>
-          <h3>{ccase.subject}</h3>
-          <p>{ccase.status}</p>
+          <div>
+            <h3>{ccase.subject}</h3>
+            <p>Sender: {ccase.email}</p>
+          </div>
+          <div>
+            <p>{ccase.status}</p>
+            <p>time and date</p>
+          </div>
         </div>
-        <p className='parag'>{ccase.message}</p><br></br>
-        <Link to="/" className='liActive nav-link'>Back to the list of Cases</Link>
+        <div className='parag'>
+          <p>Message:</p>
+          <p>{ccase.message}</p><br></br>
+        </div>
+        <div className='centered'>
+          <Link to="/" className='liActive nav-link'>Back to the list of Cases</Link>
+        </div>
       </div>        
     </div>
   )
