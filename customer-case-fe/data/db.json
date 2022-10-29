@@ -31,6 +31,14 @@
       "message": "whatever here",
       "status": "New Case",
       "id": 4
+    },
+    {
+      "email": "mail@domain.se",
+      "customerName": "Ehsan",
+      "subject": "Felanmäla",
+      "message": "Bla bla",
+      "status": "New Case",
+      "id": 5
     }
   ]
 }
