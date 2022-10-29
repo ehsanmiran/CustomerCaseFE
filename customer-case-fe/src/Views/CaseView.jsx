@@ -34,8 +34,10 @@ const Case = () => {
           </div>
         </div>
         <div className='parag'>
-          <p>Message:</p>
-          <p>{ccase.message}</p><br></br>
+          <h4>Message:</h4>
+          <p>{ccase.message}</p>
+          <h4>Sender: {ccase.customerName}</h4>
+          
         </div>
         <div className='centered'>
           <Link to="/" className='liActive nav-link'>Back to the list of Cases</Link>

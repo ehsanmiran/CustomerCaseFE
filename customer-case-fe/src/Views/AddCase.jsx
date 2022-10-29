@@ -59,10 +59,10 @@ const AddCase = () => {
         <div className="timestamp input">
           <label className='input'>Select Status: </label>
           <select type="text" id='status' value={status} className="select select-input" onChange={(e) => { setStatus(e.target.value) }}>
-            <option value="empty">Click Here!</option>
-            <option value="New Case">New Case</option>
-            <option value="Opened">Opened</option>
-            <option value="Closed">Closed</option>
+            <option>Select!</option>
+            <option value="0">New Case</option>
+            <option value="1">Opened</option>
+            <option value="2">Closed</option>
           </select>
         </div>
         <div className='field-warp'>
