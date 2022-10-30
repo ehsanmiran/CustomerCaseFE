@@ -26,7 +26,7 @@ const Case = () => {
         <div className='event-line disabled'>
           <div>
             <h3>{ccase.subject}</h3>
-            <p>Sender: {ccase.email}</p>
+            <p>From: {ccase.email}</p>
           </div>
           <div>
             <p>{ccase.status}</p>

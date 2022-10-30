@@ -12,7 +12,6 @@ const CasesList = () => {
         return res.json();
       })
       .then(data => {
-        data.sort((a, b) => { return a.timeStamp - b.timeStamp })
         setCcases(data);
         setLoading(false)
       })      

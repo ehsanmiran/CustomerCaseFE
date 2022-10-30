@@ -8,7 +8,7 @@ const Case = ({Case}) => {
       <Link to={`/Case/${Case.id}`} className='event-line'>
         <div>
             <h3>{Case.subject}</h3>
-            <p>Sender: {Case.email}</p>
+            <p>From: {Case.email}</p>
           </div>
           <div>
             <p>{Case.status}</p>

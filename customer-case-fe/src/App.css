@@ -194,6 +194,11 @@ textarea {
   margin: 25px 0 25px;
   padding: 1rem;
 }
+.parag, h4 {
+font-weight: 300;
+font-style: italic;
+}
+
 .centered {
   text-align: center;
   margin-bottom: 1rem;
