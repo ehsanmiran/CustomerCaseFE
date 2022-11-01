@@ -90,7 +90,7 @@ const AddCase = () => {
           value={status} 
           className="select select-input" 
           onChange={(e) => { setStatus(e.target.value) }}>
-            <option value="NotStarted">NotStarted</option>
+            <option value="Not Started">Not Started</option>
             <option value="Processing">Processing</option>
             <option value="Completed">Completed</option>
           </select>
