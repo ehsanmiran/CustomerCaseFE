@@ -13,33 +13,31 @@ const AddCase = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(email.length === 0 | subject.length === 0 | status.length === 0) {
+    if(email.length === 0 | subject.length === 0) {
       setVerification(false);
       return
     }else{
         setVerification(true)
     }
-    
-    const ccase = {email, customerName, subject, message, status};
+
+    const cCase = {email, customerName, subject, message, status};
 
     setLoading(true)
 
-    fetch('http://localhost:8080/Cases', {
+    fetch('https://localhost:7276/api/Cases', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(ccase)
-    }).then(() => {
+      body: JSON.stringify(cCase)
+    }).then((res) => {
       setEmail('')
       setCustomerName('')
       setSubject('')
       setMessage('')
       setStatus('')
-      setLoading(false)
-      
+      setLoading(false)      
     })
     setTimeout ( () => navigate('/'), 500); 
   }
-
 
   return (
     <div>
@@ -70,7 +68,7 @@ const AddCase = () => {
         </div>
         {!loading && <button className='btn'>Send Customer Case</button>}
         {loading && <button className='btn'>Adding...</button>}
-        {!verification && <p>* Email, Subject and Status fields can not be empty.</p>}
+        {!verification && <p>* Email and Subject fields can not be empty.</p>}
       </form>
     </div>
   )

@@ -12,7 +12,7 @@ const Case = () => {
   useEffect(() => {
     const getCcase = async () => {
       setLoading(true)
-      const res = await axios.get('http://localhost:8080/Cases/' + id)
+      const res = await axios.get('https://localhost:7276/api/Cases/' + id)
       setCcase(res.data)
       setLoading(false)
     }

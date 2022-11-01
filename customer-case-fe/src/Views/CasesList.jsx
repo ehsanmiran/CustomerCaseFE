@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
 import Case from '../components/Case'
 
+
 const CasesList = () => {
 
   const [ccases, setCcases] = useState('')
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('http://localhost:8080/Cases')
+    fetch('https://localhost:7276/api/Cases')
       .then(res => {
         return res.json();
       })
