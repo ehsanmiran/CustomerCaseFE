@@ -10,9 +10,9 @@ const Case = ({Case}) => {
             <h3>{Case.subject}</h3>
             <p>From: {Case.email}</p>
           </div>
-          <div>
+          <div className='to-right'>
             <p>{Case.status}</p>
-            <p>time and date</p>
+            <p>{Case.created}</p>
           </div>
       </Link>
     </div>

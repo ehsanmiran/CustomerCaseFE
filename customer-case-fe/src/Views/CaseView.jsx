@@ -28,9 +28,9 @@ const Case = () => {
             <h3>{ccase.subject}</h3>
             <p>From: {ccase.email}</p>
           </div>
-          <div>
+          <div className='to-right'>
             <p>{ccase.status}</p>
-            <p>time and date</p>
+            <p>{ccase.created}</p>
           </div>
         </div>
         <div className='parag'>
