@@ -30,7 +30,7 @@ const Case = () => {
           </div>
           <div className='to-right'>
             <p>{ccase.status}</p>
-            <p>{ccase.created}</p>
+            <p>{new Date(ccase.created).toLocaleString()}</p>
           </div>
         </div>
         <div className='parag'>

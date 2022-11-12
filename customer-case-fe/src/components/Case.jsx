@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Case = ({Case}) => {
-
+  // console.log(new Date(Case.created).toLocaleString())
   return (
     <div>
       <Link to={`/Case/${Case.id}`} className='event-line'>
@@ -12,7 +12,7 @@ const Case = ({Case}) => {
           </div>
           <div className='to-right'>
             <p>{Case.status}</p>
-            <p>{Case.created}</p>
+            <p>{new Date(Case.created).toLocaleString()}</p>
           </div>
       </Link>
     </div>
